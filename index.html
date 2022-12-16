@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang= "es">
+    <head>
+       <meta charset="UTF-8">
+        <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Mi Calculadora</title>
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+            <link rel="stylesheet" href="./estilos.css">
+
+    </head>
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">CALCULADORA SIMPLE</h5>
+              <span class="text-muted">La calculadora virtual te permite realizar las operaciones aritméticas básicas: sumar, restar, dividir y multiplicar</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </header>
+    
+    <body>
+            <div class="container">
+                <div id="operacionMatematica">0</div>
+                     <div id="txtResultado"></div>
+
+            <div class="fila">
+                <button class="tecla" onclick="operador('1')">1</button>
+                <button class="tecla" onclick="operador('2')">2</button>
+                <button class="tecla" onclick="operador('3')">3</button>
+                <button class="tecla" onclick="operacion('/')">/</button>
+            </div>
+
+            <div class="fila">
+                <button class="tecla" onclick="operador('4')">4</button>
+                <button class="tecla" onclick="operador('5')">5</button>
+                <button class="tecla" onclick="operador('6')">6</button>
+                <button class="tecla" onclick="operacion('*')">x</button>
+            </div>
+
+            <div class="fila">
+                <button class="tecla" onclick="operador('7')">7</button>
+                <button class="tecla" onclick="operador('8')">8</button>
+                <button class="tecla" onclick="operador('9')">9</button>
+                <button class="tecla" onclick="operacion('-')">-</button>
+            
+            </div>
+ 
+            <div class="fila">
+                <button class="tecla" onclick="borrar()">C</button>
+                <button class="tecla" onclick="operador('0')">0</button>
+                <button class="tecla" onclick="calculo()">=</button>
+                <button class="tecla" onclick="operacion('+')">+</button>
+            </div>
+
+
+        </div>
+
+        </div>
+
+        <script src="./Calculator.js"></script>
+
+        <div class="card text-bg-dark">
+            <img src="./img/Mathematics.jpg" class="card-img" alt="equal">
+            <div class="card-img-overlay">
+              <h5 class="card-title">La Calculadora es uno de los mejores inventos</h5>
+              <p class="card-text">Desde las manos, el Abaco, en formato mecanico y hasta la era digital.</p>
+              <p class="card-text"><small>UNA HERRAMIENTA EN CONTINUA INNOVACION.</small></p>
+            </div>
+          </div>
+
+
+    </body>
+
+</html>
